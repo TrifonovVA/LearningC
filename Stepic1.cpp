@@ -1,5 +1,7 @@
-//1.5.14 Цикл while
-/* 
+// https://stepik.org/course/363/syllabus
+
+// 1.5.14 Цикл while
+/*
 #include <iostream>
 using namespace std;
 
@@ -31,7 +33,7 @@ int main ()
                 }
             }
             lloc=1;
-            
+
         }
         else
         {
@@ -50,5 +52,29 @@ int main ()
     return 0;
 } */
 
+// 1.6.1
+/*
+x = (double) k/m.
+Функция trunc, которая просто отбрасывает дробную часть числа и выглядит так: n = trunc(x);
+Функция floor, которая округляет число в меньшую сторону и выглядит так: n = floor(x);
+Функция ceil, которая округляет число в большую сторону и выглядит так: n = ceil(x);
+Функция round, которая округляет число по математическим правилам и выглядит так: n = round(x);
+ */
+#include <iostream> //Работа с вводом и выводом через командную строку
+#include <iomanip>  //Работа с форматированием, вводом и выводом действительных чисел
+#include <cmath>
+using namespace std;
 
-//1.6.1 
+int main()
+{
+    double n;
+    while (n != 0)
+    {
+        cin >> n;
+        cout << setprecision(50) << fixed;
+        cout << n << endl;
+        cout << (int)n << endl;
+        cout << n - (int)n << endl<<endl<<endl;
+    }
+    return 0;
+}
